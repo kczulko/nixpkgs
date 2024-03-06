@@ -7,6 +7,7 @@
 , fetchFromGitHub
 , fetchurl
 , libiconv
+, huggingface-hub
 , numpy
 , openssl
 , pkg-config
@@ -99,6 +100,7 @@ buildPythonPackage rec {
 
   propagatedBuildInputs = [
     numpy
+    huggingface-hub
   ];
 
   nativeCheckInputs = [
